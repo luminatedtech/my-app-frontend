@@ -32,7 +32,6 @@ function NavBar() {
                 exact
                 style ={linkStyles}
                 >
-                
                 Kanto
             </NavLink>
             <NavLink
@@ -40,8 +39,14 @@ function NavBar() {
                 exact
                 style ={linkStyles}
                 >
-                
                 Johto
+            </NavLink>
+            <NavLink
+                to = "/trainers/hoenn"
+                exact
+                style ={linkStyles}
+                >
+                Hoenn
             </NavLink>
         </div>)}
 export default NavBar
