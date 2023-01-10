@@ -28,12 +28,20 @@ function NavBar() {
                 About
             </NavLink>
             <NavLink
-                to = "/trainers/2"
+                to = "/trainers/kanto"
                 exact
                 style ={linkStyles}
                 >
                 
                 Kanto
+            </NavLink>
+            <NavLink
+                to = "/trainers/johto"
+                exact
+                style ={linkStyles}
+                >
+                
+                Johto
             </NavLink>
         </div>)}
 export default NavBar

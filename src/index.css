@@ -20,3 +20,47 @@ code {
   margin: auto;
   width: 100%;
 }
+
+.trainerCard{
+  height: 30%;
+  width: 100%;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  border: blue solid 1px;
+}
+
+.trainerImage {
+  height: 250px; 
+  width: 250px;
+  display: flex;
+  margin:auto;
+  justify-content: center;
+  text-align: center;
+}
+.pokemonImage {
+  height: 100px;
+  width: 100px;
+  display: flex;
+}
+.pokemonDetails {
+  padding: 20px;
+  border: 3px solid #fff;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+.float-child {
+  float:left;
+  padding: 20px;
+  border: 2px solid red;
+  
+}
+.trainerContainer {
+  display: flex-col;
+  width: 100%;
+
+}
