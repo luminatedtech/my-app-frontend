@@ -5,6 +5,7 @@ import Home from "./Home"
 import About from "./About"
 import Kanto from "./Kanto"
 import Johto from "./Johto";
+import Hoenn from "./Hoenn";
 function App() {
  
   return (
@@ -22,6 +23,9 @@ function App() {
         </Route>
         <Route exact path = "/trainers/johto">
           <Johto/>
+        </Route>
+        <Route exact path = "/trainers/hoenn">
+          <Hoenn/>
         </Route>
       </Switch>
       
