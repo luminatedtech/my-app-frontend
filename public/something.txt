@@ -1,0 +1,21 @@
+function handleSubmit(e){
+        e.preventDefault()
+        const listData = {
+            name: name,
+            items: [{
+                item1: item1Name
+                item2: item2Name
+                
+            }]
+        }
+    
+    fetch("http://localhost:9292/lists",{
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body:JSON.stringify(listData)
+    })
+    .then((r)=>r.json())
+    .then((newList)=> onAddList(newList))
+}
