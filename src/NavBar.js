@@ -48,5 +48,33 @@ function NavBar() {
                 >
                 Hoenn
             </NavLink>
+            <NavLink
+                to = "/trainers/sinnoh"
+                exact
+                style ={linkStyles}
+                >
+                Sinnoh
+            </NavLink>
+            <NavLink
+                to = "/trainers/unova"
+                exact
+                style ={linkStyles}
+                >
+                Unova
+            </NavLink>
+            <NavLink
+                to = "/trainers/kalos"
+                exact
+                style ={linkStyles}
+                >
+                Kalos
+            </NavLink>
+            <NavLink
+                to = "/trainers/aloha"
+                exact
+                style ={linkStyles}
+                >
+                Aloha
+            </NavLink>
         </div>)}
 export default NavBar
