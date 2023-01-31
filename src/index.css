@@ -14,7 +14,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+.trainerFormDiv {
+  display:block;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  margin-top: 200px;
+}
 .center{
   text-align: center;
   display: block;
@@ -34,6 +41,97 @@ code {
   border-style: inset;
 }
 
+.WATER {
+  background-color: blue;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.GRASS {
+  background-color: green;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.ICE {
+  background-color: aqua;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.FIRE {
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.POISON {
+  background-color: purple;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.DARK {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.FLYING {
+  background-color: darkgray;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.ROCK {
+  background-color: darkslategray;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.GROUND {
+  background-color: brown;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.STEEL {
+  background-color: grey;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.FIGHTING {
+  background-color: darkred;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.ELECTRIC {
+  background-color: yellow;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.DRAGON {
+  background-color: blueviolet;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.BUG {
+  background-color: aquamarine;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.NORMAL {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.FAIRY {
+  background-color: pink;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.GHOST {
+  background-color: palevioletred;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.PSYCHIC {
+  background-color: palevioletred;
+  border: 1px solid black;
+  border-radius: 30px;
+}
 .trainerImage {
   height: 250px; 
   width: 200px;
@@ -41,6 +139,17 @@ code {
   margin:auto;
   justify-content: center;
   text-align: center;
+}
+
+.inputField {
+  display: flex;
+  box-sizing: border-box;
+  height: 39px;
+  width: 426px;
+  border: 1px solid #E6E6E6;
+  border-radius: 20px;
+  color: #333333;
+  font-size: 18px;
 }
 .pokemonImage {
   height: 100px;
@@ -65,4 +174,9 @@ code {
   display: flex-col;
   width: 100%;
 
+}
+.likesButton {
+  padding: 0;
+border: none;
+background: none;
 }
