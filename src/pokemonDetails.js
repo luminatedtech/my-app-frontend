@@ -23,7 +23,7 @@ useEffect (()=> {
                 className="pokemonImage"
             />
             <h2>Level:{level}</h2>
-            <table>
+            <table className="typeTable">
                 <tr>
                     <td ref={type1Ref} className="typeRow">{type1}</td>
                     {type2 !== null && <td ref={type2Ref} className="typeRow">{type2}</td> }

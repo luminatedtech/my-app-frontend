@@ -35,13 +35,11 @@ function TrainerDetails ({name,trainer,region,onUpdateTrainer,type,src,title,onD
             />
             <p>This trainer is the {title} member of the {region} Elite Four </p>
             <p>They specialize with {type} pokemon!</p>
+            <div className="buttonDiv">
+                <button onClick={handleAddLike} className="likesButton">{likes} ♥ Likes</button> 
+                <button className="deleteButton" onClick={handleDeleteClick}> Delete</button>
+            </div>
             
-            <button onClick={handleAddLike} className="likesButton">{likes} ♥ Likes</button> 
-            
-    
-            <button onClick={handleDeleteClick}>
-                Delete
-            </button>
             <div className="pokemonDetails"> 
                 {pokemon.map((pokemon)=>(
                     <PokemonDetails  key={pokemon} name={pokemon.name} level={pokemon.level} src={pokemon.avatar_url} type1={pokemon.type1_id} type2={pokemon.type2_id} pokemon={pokemon}/>

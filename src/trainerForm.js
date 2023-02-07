@@ -3,7 +3,7 @@ import React, {useState} from "react"
 function TrainerForm ({onAddTrainer}) {
     const [name,setName]=useState('')
     const [region,setRegion]=useState('')
-    const[pokemon,setPokemon]=useState('')
+    
     const [pokemon1,setPokemon1] = useState('')
     const [type1_id, setType1_Id] = useState('')
     const [type2_id, setType2_Id] = useState('')
@@ -54,19 +54,13 @@ function TrainerForm ({onAddTrainer}) {
                  placeholder="What region is this Trainer from"
                  onChange={(e)=>setRegion(e.target.value)}
                  /> 
-                <input 
-                  className="inputField"
-                    name={pokemon}
-                    type="text"
-                    placeholder="How many Pokmeon do they have?"
-                    onChange={(e)=>setPokemon(e.target.value)}
-                /> 
+          
                 <input 
                  className="inputField"
                  name={pokemon1}
                  value={pokemon1}
                  type="text"
-                 placeholder="What is the name of his first Pokemon?"
+                 placeholder="What is the name of his strongest pokemon?"
                  onChange={(e)=>setPokemon1(e.target.value)}
                  />
                 <input 
@@ -101,7 +95,7 @@ function TrainerForm ({onAddTrainer}) {
                 
                      type="submit"
                      name="submit"
-                     value="Submit New Tea"
+                     value="Submit New Pokemon"
                      className="submit"
                      />
             </form>
