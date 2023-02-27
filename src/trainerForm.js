@@ -36,7 +36,8 @@ function TrainerForm ({onAddTrainer}) {
 }
     return (
     <div>
-        <h2 className="center">Trainer Form</h2>
+        <h1 className="center">Trainer Form</h1>
+        <h2 className="center">Add a new trainer and his strongest pokemon!</h2>
         <div className="trainerFormDiv">
             
             <form onSubmit={handleSubmit}>
@@ -67,14 +68,14 @@ function TrainerForm ({onAddTrainer}) {
                  className="inputField"
                  name={type1_id}
                  type="text"
-                 placeholder="Which type is this pokmeon?"
+                 placeholder="Which type is this pokmeon? (USE CAPITAL LETTERS)"
                  onChange={(e)=>setType1_Id(e.target.value)}
                  />
                 <input 
                  className="inputField"
                  name={type2_id}
                  type="text"
-                 placeholder="If the pokemon has another type, what is it?"
+                 placeholder="If the pokemon has another type, what is it? (USE CAPITAL LETTERS)"
                  onChange={(e)=>setType2_Id(e.target.value)}
                  />
                    <input 
@@ -95,7 +96,7 @@ function TrainerForm ({onAddTrainer}) {
                 
                      type="submit"
                      name="submit"
-                     value="Submit New Pokemon"
+                     value="Submit New Trainer"
                      className="submit"
                      />
             </form>

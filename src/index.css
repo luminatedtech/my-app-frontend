@@ -81,7 +81,7 @@ code {
   font-weight: bold;
 }
 .FLYING {
-  background-color: darkgray;
+  background-color: rgb(118, 187, 210);
   border: 1px solid black;
   border-radius: 30px;
   font-weight: bold;
@@ -165,11 +165,12 @@ code {
   display: flex;
   box-sizing: border-box;
   height: 39px;
-  width: 426px;
+  width: 1000px;
   border: 1px solid #E6E6E6;
   border-radius: 20px;
   color: #333333;
   font-size: 18px;
+  margin-bottom: 10px;
 }
 .pokemonImage {
   height: 100px;
@@ -211,4 +212,14 @@ right: 300px
 .typeTable {
   justify-content: center;
   display: flex;
+}
+.aboutPokemon {
+  display:flex;
+  width: 80%;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }

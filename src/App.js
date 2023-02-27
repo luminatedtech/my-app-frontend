@@ -30,7 +30,7 @@ function App() {
       .then((trainers)=> setTrainers(trainers))
   }, []) 
 
-
+console.log(trainers)
   return (
     <div className="App">
       <NavBar/>

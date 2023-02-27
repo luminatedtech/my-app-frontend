@@ -13,7 +13,7 @@ function TrainerDetails ({name,trainer,region,onUpdateTrainer,type,src,title,onD
             })
         })
         .then((r)=> r.json())
-        .then((updatedTrainer)=> onUpdateTrainer(updatedTrainer))
+        .then((updatedTrainer)=> {onUpdateTrainer(updatedTrainer); console.log('updatedTrainer', updatedTrainer)})
     }
     function handleDeleteClick() {
         fetch(`http://localhost:9292/trainers/${trainer.id}`,{
@@ -23,7 +23,7 @@ function TrainerDetails ({name,trainer,region,onUpdateTrainer,type,src,title,onD
         .then((trainer)=>onDeleteTrainer(trainer))
         
     }
-    console.log(trainerId)
+    console.log(pokemon)
     if (trainerId >= 0 && trainerId <= 35){
     return (
         <div className="trainerCard">
@@ -42,7 +42,7 @@ function TrainerDetails ({name,trainer,region,onUpdateTrainer,type,src,title,onD
             
             <div className="pokemonDetails"> 
                 {pokemon.map((pokemon)=>(
-                    <PokemonDetails  key={pokemon} name={pokemon.name} level={pokemon.level} src={pokemon.avatar_url} type1={pokemon.type1_id} type2={pokemon.type2_id} pokemon={pokemon}/>
+                    <PokemonDetails  name={pokemon.name} level={pokemon.level} src={pokemon.avatar_url} type1={pokemon.type1_id} type2={pokemon.type2_id} pokemon={pokemon}/>
                 ))}
             </div>
         </div>
@@ -62,7 +62,7 @@ function TrainerDetails ({name,trainer,region,onUpdateTrainer,type,src,title,onD
             </button>
             <div className="pokemonDetails"> 
                 {pokemon.map((pokemon)=>(
-                    <PokemonDetails  key={pokemon} name={pokemon.name} level={pokemon.level} src={pokemon.avatar_url} type1={pokemon.type1_id} type2={pokemon.type2_id} pokemon={pokemon}/>
+                    <PokemonDetails name={pokemon.name} level={pokemon.level} src={pokemon.avatar_url} type1={pokemon.type1_id} type2={pokemon.type2_id} pokemon={pokemon}/>
                 ))}
             </div>
         </div>
